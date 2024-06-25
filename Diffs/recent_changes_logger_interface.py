@@ -1,12 +1,12 @@
 from abc import ABCMetaclass
 
 class RecentChangesLoggerInterface(metaclass=ABCMetaclass):
-	"""
-	A RecentChangesLogger is an agent that keeps track of recently seen AND processed changes to a knowledge base.
+    """
+    A RecentChangesLogger is an agent that keeps track of recently seen AND processed changes to a knowledge base.
 
-	It has functionality to look up and pick out changes that have not yet been seen from a list of
-	changes, and functionality to commit changes to the log
-	"""
+    It has functionality to look up and pick out changes that have not yet been seen from a list of
+    changes, and functionality to commit changes to the log
+    """
 
     @classmethod
     def __subclasshook__(cls, subclass):

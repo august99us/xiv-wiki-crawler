@@ -1,8 +1,8 @@
 from abc import ABCMetaclass
 
 class DocumentRetrieverInterface(metaclass=ABCMetaclass):
-	"""
-	"""
+    """
+    """
 
     @classmethod
     def __subclasshook__(cls, subclass):
